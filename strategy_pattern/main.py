@@ -1,5 +1,5 @@
 from duck.duck import Duck
-from duck.flyBehavior import(
+from duck.fly_behavior import(
     FlyWithWings,
     FlyNoWay,
     FlyRocketPowered)
