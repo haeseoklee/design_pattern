@@ -5,7 +5,6 @@ from .behavior import FlyBehavior, QuackBehavior
 class Duck(metaclass = ABCMeta):
 
     def __init__(self):
-        super().__init__()
         self.fly_behavior = None # FlyBehavior 인터페이스를 구현한 구상객체가 들어가야함
         self.quack_behavior = None  # QuackBehavior 인터페이스를 구현한 구상객체가 들어가야함
 
