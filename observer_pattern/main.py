@@ -1,7 +1,8 @@
 from weather_station.weather_data import WeatherData
 from weather_station.display import (
     CurrentConditionDisplay,
-    StaticsDisplay)
+    StaticsDisplay
+)
 
 
 def main():
@@ -18,8 +19,6 @@ def main():
     print(weather_data.observers)
 
     weather_data.set_measurements(90, 70, 29.2)
-
-    print("-"*30)
 
 if __name__ == '__main__':
     main()
