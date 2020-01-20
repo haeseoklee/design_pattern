@@ -38,6 +38,13 @@ def main():
     myclass3 = MyClass.instance()
     print(myclass3)
 
+    print(MyClass(3, 4))
+    print(MyClass(5, 4))
+    print(Singleton())
+    print(Singleton())
+    print(Singleton())
+
+
 
 if __name__ == '__main__':
     main()

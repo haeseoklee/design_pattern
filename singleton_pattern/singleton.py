@@ -5,7 +5,7 @@ class Singleton:
     @classmethod
     def get_instance(self):
         if Singleton.__instance is None:
-           Singleton. __instance = self()
+            Singleton. __instance = self()
         return Singleton.__instance
 
 
@@ -13,21 +13,18 @@ class MyClass(Singleton):
     pass
 
 
+class YourClass():
+    pass
+
+
 def main():
 
-    myclass = MyClass()
-    print(myclass.get_instance())
-    myclass2 = MyClass()
-    print(myclass2.get_instance())
-    myclass3 = MyClass()
-    print(myclass3.get_instance())
+    print(MyClass().get_instance(), MyClass().get_instance(), MyClass().get_instance())
 
-    singleton = Singleton()
-    print(singleton)
-    singleton2 = Singleton()
-    print(singleton2)
-    singleton3 = Singleton()
-    print(singleton3)
+    print(MyClass(), MyClass(), MyClass())
+    print(YourClass(), YourClass(), YourClass())
+    print(Singleton(), Singleton(), Singleton())
+
 
 if __name__ == '__main__':
     main()
