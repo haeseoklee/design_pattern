@@ -50,5 +50,5 @@ class CoffeeWithHook(CaffeineBeverageWithHook):
         print('설탕과 커피를 추가하는 중')
 
     def customers_wants_condiments(self):
-        answer = input('커피에 우유와 설탕을 넣어드릴까요?').lower()
+        answer = input('커피에 우유와 설탕을 넣어드릴까요? ').lower()
         return True if 'y' in answer else False
