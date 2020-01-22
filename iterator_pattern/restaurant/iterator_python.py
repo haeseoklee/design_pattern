@@ -45,7 +45,7 @@ class MenuIteratorFactory:
         self.args = args
 
     def __iter__(self):
-        # 이터레이터로 사용하고 싶을때 MenuIterator 객체를 생서한 후에 리턴한다
+        # 이터레이터로 사용하고 싶을때 MenuIterator 객체를 생성한 후에 리턴한다
         return MenuIterator(*self.args)
 
 
